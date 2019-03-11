@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GestorDeProjetos</string>
+    <string name="titulo">Gestor de Projetos</string>
+    <string name="Criar_Projeto">Criar Projeto</string>
+</resources>
