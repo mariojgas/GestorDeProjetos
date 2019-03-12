@@ -9,6 +9,7 @@ public class Projeto {
     private String nome;
     private Date dataInicial;
     private Date dataConclusao;
+    private Date dataPrevista;
     private Boolean concluido;
     private Boolean atrasado;
 
