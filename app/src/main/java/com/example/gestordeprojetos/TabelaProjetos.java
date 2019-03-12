@@ -77,7 +77,7 @@ public class TabelaProjetos implements BaseColumns {
      */
 
     //TODO: CONSULTAR
-    /*public Cursor consulta(String [] colunas, String where, String[] whereArgs, String groupBy, String having, String orderBy) {
+    public Cursor consulta(String [] colunas, String where, String[] whereArgs, String groupBy, String having, String orderBy) {
         if (colunas == null) {
             colunas = new String[] {
                     NOME_TABELA + "." + CAMPO_NOME,
@@ -91,7 +91,7 @@ public class TabelaProjetos implements BaseColumns {
         }
 
         StringBuilder select = new StringBuilder();
-
+/*
         select.append("SELECT ");
         select.append(NOME_TABELA);
         select.append('.');
@@ -121,9 +121,9 @@ public class TabelaProjetos implements BaseColumns {
             select.append(" WHERE ");
             select.append(where);
         }
-
+*/
         return bd.rawQuery(select.toString(), whereArgs);
-    }*/
+    }
 }
 
 

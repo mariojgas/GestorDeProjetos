@@ -37,6 +37,14 @@ public class Projeto {
         this.dataInicial = dataInicial;
     }
 
+    public Date getDataPrevista() {
+        return dataPrevista;
+    }
+
+    public void setDataPrevista(Date dataInicial) {
+        this.dataPrevista = dataPrevista;
+    }
+
     public Date getDataConclusao() {
         return dataConclusao;
     }
