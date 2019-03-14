@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 
 public class TabelaProjetos implements BaseColumns {
-    public static final String NOME_TABELA = "projetos";
+    public static final String NOME_TABELA = "tarefas";
 
     public static final String CAMPO_NOME = "nome";
     public static final String CAMPO_DATAINIT = "datainicial";

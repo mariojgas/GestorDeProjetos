@@ -2,4 +2,10 @@
     <string name="app_name">GestorDeProjetos</string>
     <string name="titulo">Gestor de Projetos</string>
     <string name="Criar_Projeto">Criar Projeto</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="guardar">Guardar</string>
+    <string name="novo">Novo</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="alterar">Alterar</string>
+    <string name="detalhes">Detalhes</string>
 </resources>

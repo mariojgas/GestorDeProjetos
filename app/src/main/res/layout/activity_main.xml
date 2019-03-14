@@ -27,7 +27,7 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/criar_projeto_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -43,7 +43,7 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/consultar_projeto_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -59,7 +59,7 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/consultar_projeto_concluidos_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
