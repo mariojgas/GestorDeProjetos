@@ -78,51 +78,7 @@ public class TabelaProjetos implements BaseColumns {
 
     //TODO: CONSULTAR
     public Cursor consulta(String [] colunas, String where, String[] whereArgs, String groupBy, String having, String orderBy) {
-        if (colunas == null) {
-            colunas = new String[] {
-                    NOME_TABELA + "." + CAMPO_NOME,
-                    NOME_TABELA + "." + CAMPO_DATAINIT,
-                    NOME_TABELA + "." + CAMPO_DATAPREVISTA,
-                    NOME_TABELA + "." + CAMPO_DATAFINAL,
-                    NOME_TABELA + "." + CAMPO_ATRASADO,
-                    NOME_TABELA + "." + CAMPO_CONCLUIDO
-
-        };
-        }
-
-        StringBuilder select = new StringBuilder();
-/*
-        select.append("SELECT ");
-        select.append(NOME_TABELA);
-        select.append('.');
-        select.append(_ID);
-
-        for (int c = 0; c < colunas.length; c++) {
-            String nomeColuna = colunas[c];
-
-            if (nomeColuna != _ID) {
-                select.append(',');
-                select.append(nomeColuna);
-            }
-        }
-
-        select.append(" FROM ");
-        select.append(NOME_TABELA);
-        select.append(" INNER JOIN ");
-        select.append(TabelaOradores.NOME_TABELA);
-        select.append(" ON ");
-        select.append(TabelaOradores.NOME_TABELA);
-        select.append('.');
-        select.append(TabelaOradores._ID);
-        select.append('=');
-        select.append(CAMPO_ORADOR);
-
-        if (where != null) {
-            select.append(" WHERE ");
-            select.append(where);
-        }
-*/
-        return bd.rawQuery(select.toString(), whereArgs);
+        return bd.query(NOME_TABELA, colunas, where, whereArgs, groupBy, having, orderBy);
     }
 }
 

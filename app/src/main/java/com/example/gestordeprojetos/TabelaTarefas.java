@@ -85,17 +85,19 @@ public class TabelaTarefas implements BaseColumns {
         if (colunas == null) {
             colunas = new String[] {
                     NOME_TABELA + "." + CAMPO_NOME,
+                    NOME_TABELA + "." + CAMPO_PROJETO,
                     NOME_TABELA + "." + CAMPO_DATAINIT,
                     NOME_TABELA + "." + CAMPO_DATAPREVISTA,
                     NOME_TABELA + "." + CAMPO_DATAFINAL,
                     NOME_TABELA + "." + CAMPO_ATRASADO,
-                    NOME_TABELA + "." + CAMPO_CONCLUIDO
+                    NOME_TABELA + "." + CAMPO_CONCLUIDO,
+                    TabelaProjetos.NOME_TABELA + "." + TabelaProjetos.CAMPO_NOME
 
         };
         }
 
         StringBuilder select = new StringBuilder();
-/*
+
         select.append("SELECT ");
         select.append(NOME_TABELA);
         select.append('.');
@@ -113,19 +115,19 @@ public class TabelaTarefas implements BaseColumns {
         select.append(" FROM ");
         select.append(NOME_TABELA);
         select.append(" INNER JOIN ");
-        select.append(TabelaOradores.NOME_TABELA);
+        select.append(TabelaProjetos.NOME_TABELA);
         select.append(" ON ");
-        select.append(TabelaOradores.NOME_TABELA);
+        select.append(TabelaProjetos.NOME_TABELA);
         select.append('.');
-        select.append(TabelaOradores._ID);
+        select.append(TabelaProjetos._ID);
         select.append('=');
-        select.append(CAMPO_ORADOR);
+        select.append(CAMPO_PROJETO);
 
         if (where != null) {
             select.append(" WHERE ");
             select.append(where);
         }
-*/
+
         return bd.rawQuery(select.toString(), whereArgs);
     }
 }

@@ -50,9 +50,7 @@ public class BdProjetosOpenHelper extends SQLiteOpenHelper {
         Date d = (Date) Calendar.getInstance().getTime();
         SimpleDateFormat dateFormat = new SimpleDateFormat("DD/MM/YYYY");
         dateFormat.format(d);
-        Projeto projeto = new Projeto();
-        projeto.setNome("Teste");
-        projeto.setDataInicial(d);
+
         /*long id = tabelaOradores.inserir(orador.getContentValues());
         orador.setId(id);
 
